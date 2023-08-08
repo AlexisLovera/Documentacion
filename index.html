@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Frontend and Backend</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#frontend">Frontend</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#backend">Backend</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#database_and_api">Database and API</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#example_project">Example Project</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="introduction" class="main-section">
+        <header>Introduction</header>
+        <article>
+          <p>In this technical documentation, we will explore the fundamentals and key concepts of web development in two foundational areas: Frontend and Backend. These two pillars are essential for creating websites and applications that deliver an exceptional user experience and robust functionality.</p>
+          <p>The Frontend refers to everything that the user sees and interacts with in the web browser. Here, we use languages like HTML for structure, CSS for design, and JavaScript for interactivity. Through practical examples, we will learn how to build the user interface and make it both appealing and functional.</p>
+          <p>On the other hand, the Backend focuses on the server-side, where logic and data manipulation reside. We will explore languages like Node.js, PHP, Python, and Ruby, as well as frameworks like Express, Django, and Ruby on Rails. We will see how to handle client requests, interact with databases, and provide appropriate responses.</p>
+        </article> 
+      </section>
+      <section id="frontend" class="main-section">
+        <header>Frontend</header>
+        <article>
+          <p>In this section, we will dive into the fascinating world of Frontend development. We will start with HTML, the markup language that defines the structure of a web page. We will learn about semantic elements, tags, and attributes to create a well-organized structure.</p>
+          <p>Next, we will explore CSS, the style language that brings life to our pages. We will see how to style elements, create flexible layouts, and apply animations to enhance the user experience.</p>
+          <p>Finally, we will delve into JavaScript, the programming language that makes our pages interactive and dynamic. We will learn about events, DOM manipulation, and how to interact with APIs to enrich our applications.</p>
+        </article>
+        <ul>
+          <li>HTML: The markup language for web pages.</li>
+          <li>CSS: The style language to design web pages.</li>
+          <li>JavaScript: The programming language for interactivity.</li>
+          <li>Responsive Design: Ensuring websites work well on different     
+            devices.</li>
+          <li>Animations: Adding dynamic and engaging animations.</li>
+        </ul> 
+      </section>
+      <section id="backend" class="main-section">
+        <header>Backend</header>
+        <article>
+          <p>In this section, we will focus on the server-side and the exciting world of Backend development. We will explore different programming languages like Node.js, PHP, Python, and Ruby, and see their strengths and uses in web development.</p>
+          <p>Furthermore, we will delve into the most popular frameworks and libraries used in Backend development, such as Express, Laravel, Django, and Ruby on Rails. We will learn how to create routes, handle requests and responses, and how to structure our applications in an organized and efficient manner.</p>
+          <p>We will also discuss security topics and best practices to ensure our applications are protected against potential vulnerabilities.</p>
+        </article>
+        <ul>
+          <li>Node.js: Server-side JavaScript runtime environment.</li>
+          <li>Express.js: Web application framework for Node.js.</li>
+          <li>PHP: Server-side scripting language for web development.</li>
+          <li>Python: Versatile programming language for backend development.</li>
+          <li>Ruby: Object-oriented language used with Rails for web apps.</li>
+        </ul> 
+      </section>
+      <section id="database_and_api" class="main-section">
+        <header>Database and API</header>
+        <article>
+          <p>In this section, we will explore the importance of databases in web development and how they integrate with the Backend to efficiently store and retrieve data. We will look into different types of databases, such as SQL and NoSQL, and how to choose the most suitable one for our needs.</p>
+          <p>Furthermore, we will learn about Application Programming Interfaces (APIs) and how they are used to establish communication between the Frontend and Backend. We will discover how to design and document APIs so that other developers can interact with our services.</p>
+        </article> 
+      <section id="example_project" class="main-section">
+  <header>Example Project</header>
+  <article>
+    <p>In this exciting section, we will put everything we have learned into practice by developing a complete project that integrates both Frontend and Backend. We will design and build a web application for task management, where users can add, edit, and delete tasks.</p>
+    <p><span>Frontend:</span>
+      We will start by creating the basic structure of the project using HTML. We will define the main page, the task addition form, and the list of existing tasks. Here's an example of the HTML code:</p>
+    <pre><code>&lt;h1&gt;Task Manager&lt;/h1&gt;</code></pre>
+    <pre><code>&lt;form id="task-form"&gt;</code></pre>
+    <pre><code>  &lt;input type="text" placeholder="Enter a new task" /&gt;</code></pre>
+    <pre><code>  &lt;button type="submit"&gt;Add Task&lt;/button&gt;</code></pre>
+    <pre><code>&lt;/form&gt;</code></pre>
+    <pre><code>&lt;ul id="task-list"&gt;</code></pre>
+    <pre><code>  &lt;li&gt;Task 1&lt;/li&gt;</code></pre>
+    <pre><code>  &lt;li&gt;Task 2&lt;/li&gt;</code></pre>
+    <pre><code>  &lt;li&gt;Task 3&lt;/li&gt;</code></pre>
+    <pre><code>  &lt;li&gt;Task 4&lt;/li&gt;</code></pre>
+    <pre><code>  &lt;li&gt;Task 5&lt;/li&gt;</code></pre>
+    <pre><code>&lt;/ul&gt;</code></pre>
+  </article>
+  <article>
+    <p><span>Backend:</span>
+      On the server-side, we will use Node.js as our backend language and Express.js as the web application framework. We will create routes to handle task-related requests.</p>
+    <pre><code>// Sample backend route to handle task addition</code></pre>
+    <pre><code>app.post('/addTask', (req, res) => {</code></pre>
+    <pre><code>  const { taskName } = req.body;</code></pre>
+    <pre><code>  // Code to add the task to the database</code></pre>
+    <pre><code>  res.json({ message: 'Task added successfully' });</code></pre>
+    <pre><code>});</code></pre>
+  </article>
+  <article>
+    <p><span>Database and API:</span>
+      For the database, we will use MongoDB, a NoSQL database, to store our tasks. We will create a RESTful API to interact with the database and perform CRUD operations.</p>
+    <pre><code>// Sample API endpoint to get all tasks</code></pre>
+    <pre><code>app.get('/api/tasks', (req, res) => {</code></pre>
+    <pre><code>  // Code to fetch all tasks from the database</code></pre>
+    <pre><code>  const tasks = [</code></pre>
+    <pre><code>    { id: 1, name: 'Task 1' },</code></pre>
+    <pre><code>    { id: 2, name: 'Task 2' },</code></pre>
+    <pre><code>    { id: 3, name: 'Task 3' },</code></pre>
+    <pre><code>    { id: 4, name: 'Task 4' },</code></pre>
+    <pre><code>    { id: 5, name: 'Task 5' }</code></pre>
+    <pre><code>  ];</code></pre>
+    <pre><code>  res.json(tasks);</code></pre>
+    <pre><code>});</code></pre>
+  </article>
+  <article>
+    <p><span>Frontend JavaScript:</span>
+      In the frontend JavaScript, we will use Fetch API to interact with the backend API and perform CRUD operations on tasks.</p>
+    <pre><code>// Sample frontend JavaScript to fetch tasks from API</code></pre>
+    <pre><code>fetch('/api/tasks')</code></pre>
+    <pre><code>  .then(response =&gt; response.json())</code></pre>
+    <pre><code>  .then(tasks =&gt; {</code></pre>
+    <pre><code>    // Code to display tasks in the frontend</code></pre>
+    <pre><code>  });</code></pre>
+  </article>
+  <article>
+    <p><span>CSS:</span>
+      For styling, we will use CSS to make our task manager application visually appealing and user-friendly.</p>
+    <pre><code>/* Sample CSS for task list */</code></pre>
+    <pre><code>#task-list {</code></pre>
+    <pre><code>  list-style: none;</code></pre>
+    <pre><code>  padding: 0;</code></pre>
+    <pre><code>}</code></pre>
+    <pre><code>#task-list li {</code></pre>
+    <pre><code>  margin-bottom: 5px;</code></pre>
+    <pre><code>  background-color: #f0f0f0;</code></pre>
+    <pre><code>  padding: 10px;</code></pre>
+    <pre><code>  border-radius: 5px;</code></pre>
+    <pre><code>}</code></pre>
+  </article>
+</section>
+      
+        </article>  
+      </section>
+    </main>
+  </body>
+</html>
